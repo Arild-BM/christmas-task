@@ -49,20 +49,20 @@ input, textarea {
     cursor: pointer;
 }
 
-/* Posisjonering og animering av 2 juleklokker */
+/* Posisjonering 2 juleklokker */
 .juleklokker {
     position: absolute;
     top: 60px;
     width: 150px;
 }
 
-/* Setter en klokke på venstre side */
+/* Setter en klokke på venstre side og animering*/
 .juleklokker1 {
     left: 80px;
     animation: roter 3s infinite linear normal;
 }
 
-/* Setter en klokke på høyre side */
+/* Setter en klokke på høyre side og animering i motsatt retning*/
 .juleklokker2 {
     right: 80px;
     animation: roter 3s infinite linear reverse;
