@@ -38,13 +38,13 @@ export default function Greeting() {
                     name="username"
                     value={greeting.username}
                     onChange={handleChange}
-                    placeholder="Your name"
+                    placeholder="Navn"
                     maxLength="30"
                 />
                 <br />
                 <textarea
                     name="greeting"
-                    placeholder="Your greeting"
+                    placeholder="Skriv inn hilsen"
                     value={greeting.greeting}
                     onChange={handleChange}
                     maxLength="200"
