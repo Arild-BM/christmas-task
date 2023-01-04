@@ -50,7 +50,7 @@ export default function Greeting() {
                     maxLength="200"
                 />
                 <br />
-                <input type="submit" value="Send hilsen"/>
+                <input className="submit" type="submit" value="Send hilsen"/>
             </form>
             
             {/* Legger ut alle hilsener i array */}

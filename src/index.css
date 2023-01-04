@@ -45,40 +45,42 @@ input, textarea {
     border-radius: 5px;
 }
 
+.submit {
+    cursor: pointer;
+}
+
 /* Posisjonering og animering av 2 juleklokker */
 .juleklokker {
     position: absolute;
     top: 60px;
     width: 150px;
-    animation: roter 3s infinite linear;
-}
-
-@keyframes roter {
-    0%{
-        transform: rotate(60deg);
-    }
-    25%{
-        transform: rotate(0deg);
-    }
-    50%{
-        transform: rotate(-60deg);
-    }
-    75%{
-        transform: rotate(0deg);
-    }
-    100%{
-        transform: rotate(60deg);
-    }
 }
 
 /* Setter en klokke på venstre side */
 .juleklokker1 {
     left: 80px;
+    animation: roter 3s infinite linear normal;
 }
 
 /* Setter en klokke på høyre side */
 .juleklokker2 {
     right: 80px;
+    animation: roter 3s infinite linear reverse;
+}
+
+@keyframes roter {
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(60deg);
+    }
+    75%{
+        transform: rotate(-60deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
 }
 
 /* Rød tekst for nedtelling */
