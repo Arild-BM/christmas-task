@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       <Counter />
       <Greeting />
-      <Juleklokker />
+      {/* <Juleklokker /> */}
     </div>
   );
 }
