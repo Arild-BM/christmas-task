@@ -1,6 +1,8 @@
 import React from "react";
 import juleklokker from "../pictures/juleklokker.png";
 
+
+// Legger ut 2 juleklokker
 export default function Juleklokker() {
     return (
         <div>

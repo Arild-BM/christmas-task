@@ -1,27 +1,43 @@
+@font-face {
+    font-family: christmas-font;
+    src: url("./fonts/ChristmasLeaf.otf");
+  }
+  
 h4, p, small{
     margin: 0px
 }
 
 body {
-    background-color: green;
+    background-image: url("./pictures/background.jpg");
+    background-size:cover;
+    background-color: whitesmoke;
     text-align: center;
+    text-shadow: 0px 0px 2px white;
+    font-family: christmas-font, sans-serif;
 }
 
+/* Setter dato til høyre i tekstboks */
 small {
     align-self: flex-end
 }
 
+/* Formatering av tekstboks */
 .greeting-box {
+    font-family: 'Times New Roman', serif;
     min-height: 30px;
     width: 500px;
     border: 1px red solid;
+    border-radius: 10px;
+    box-shadow:0px 0px 10px 3px orangered;
     margin: 10px auto;
     padding: 5px;
     display: flex;
     flex-direction: column;
     overflow-wrap: break-word;
+    background-image: conic-gradient(yellow, orange, lightgreen, orange, yellow);
 }
 
+/* Formatering av input bokser  */
 input, textarea {
     width: 200px;
     margin: 5px;
@@ -29,6 +45,7 @@ input, textarea {
     border-radius: 5px;
 }
 
+/* Posisjonering og animering av 2 juleklokker */
 .juleklokker {
     position: absolute;
     top: 60px;
@@ -54,14 +71,17 @@ input, textarea {
     }
 }
 
+/* Setter en klokke på venstre side */
 .juleklokker1 {
     left: 80px;
-  }
+}
 
-  .juleklokker2 {
+/* Setter en klokke på høyre side */
+.juleklokker2 {
     right: 80px;
-  }
+}
 
+/* Rød tekst for nedtelling */
   .red--text {
     color: red;
   }
